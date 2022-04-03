@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-05p-sg-j0xo(*pa(lwmcoe9uv21e3n@wllh^1_17c=*!#(*5o@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://arshkasid.github.io/gg/"]
+ALLOWED_HOSTS = ["https://arshkasid.github.io/gg/","127.0.0.1"]
 
 
 # Application definition
