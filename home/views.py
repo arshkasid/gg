@@ -1,5 +1,4 @@
-
-from pyexpat.errors import messages
+from django.contrib import messages
 from django.shortcuts import render, HttpResponse
 from datetime import datetime
 from home.models import contact
@@ -10,6 +9,8 @@ def Contact(request):
         email = request.POST.get('email')
         pass2 = request.POST.get('pass2')
         Contact = contact(email=email,pass2=pass2)
+        messages.success(request, 'Your message has been sent!')
+
         Contact.save()
     return render(request,'Contact.html')
 
